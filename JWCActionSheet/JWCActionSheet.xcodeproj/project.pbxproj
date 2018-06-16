@@ -68,11 +68,11 @@
 				04CF3B6820D51A2D002C29BE /* ActionSheet */,
 				04CF3B5620D517C5002C29BE /* AppDelegate.swift */,
 				04CF3B5820D517C5002C29BE /* ViewController.swift */,
+				04CF3B6F20D51F4B002C29BE /* JWCActionSheetStyleList.swift */,
 				04CF3B5A20D517C5002C29BE /* Main.storyboard */,
 				04CF3B5D20D517C6002C29BE /* Assets.xcassets */,
 				04CF3B5F20D517C6002C29BE /* LaunchScreen.storyboard */,
 				04CF3B6220D517C6002C29BE /* Info.plist */,
-				04CF3B6F20D51F4B002C29BE /* JWCActionSheetStyleList.swift */,
 			);
 			path = JWCActionSheet;
 			sourceTree = "<group>";
