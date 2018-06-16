@@ -12,6 +12,8 @@
 		04CF3B5C20D517C5002C29BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04CF3B5A20D517C5002C29BE /* Main.storyboard */; };
 		04CF3B5E20D517C6002C29BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04CF3B5D20D517C6002C29BE /* Assets.xcassets */; };
 		04CF3B6120D517C6002C29BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04CF3B5F20D517C6002C29BE /* LaunchScreen.storyboard */; };
+		04CF3B6E20D51C82002C29BE /* JWCActionSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CF3B6D20D51C82002C29BE /* JWCActionSheet.swift */; };
+		04CF3B7020D51F4B002C29BE /* JWCActionSheetStyleList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CF3B6F20D51F4B002C29BE /* JWCActionSheetStyleList.swift */; };
 		D8412E2E4C9698D122C3BDFB /* Pods_JWCActionSheet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9D3BAC7607B217475A92E79 /* Pods_JWCActionSheet.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +25,8 @@
 		04CF3B5D20D517C6002C29BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04CF3B6020D517C6002C29BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04CF3B6220D517C6002C29BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04CF3B6D20D51C82002C29BE /* JWCActionSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWCActionSheet.swift; sourceTree = "<group>"; };
+		04CF3B6F20D51F4B002C29BE /* JWCActionSheetStyleList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWCActionSheetStyleList.swift; sourceTree = "<group>"; };
 		6C96197833EA73F0EF63B2F7 /* Pods-JWCActionSheet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWCActionSheet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JWCActionSheet/Pods-JWCActionSheet.debug.xcconfig"; sourceTree = "<group>"; };
 		9F956C8B0418238307B5180C /* Pods-JWCActionSheet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWCActionSheet.release.xcconfig"; path = "Pods/Target Support Files/Pods-JWCActionSheet/Pods-JWCActionSheet.release.xcconfig"; sourceTree = "<group>"; };
 		F9D3BAC7607B217475A92E79 /* Pods_JWCActionSheet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JWCActionSheet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,6 +72,7 @@
 				04CF3B5D20D517C6002C29BE /* Assets.xcassets */,
 				04CF3B5F20D517C6002C29BE /* LaunchScreen.storyboard */,
 				04CF3B6220D517C6002C29BE /* Info.plist */,
+				04CF3B6F20D51F4B002C29BE /* JWCActionSheetStyleList.swift */,
 			);
 			path = JWCActionSheet;
 			sourceTree = "<group>";
@@ -75,6 +80,7 @@
 		04CF3B6820D51A2D002C29BE /* ActionSheet */ = {
 			isa = PBXGroup;
 			children = (
+				04CF3B6D20D51C82002C29BE /* JWCActionSheet.swift */,
 			);
 			path = ActionSheet;
 			sourceTree = "<group>";
@@ -225,8 +231,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04CF3B7020D51F4B002C29BE /* JWCActionSheetStyleList.swift in Sources */,
 				04CF3B5920D517C5002C29BE /* ViewController.swift in Sources */,
 				04CF3B5720D517C5002C29BE /* AppDelegate.swift in Sources */,
+				04CF3B6E20D51C82002C29BE /* JWCActionSheet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
