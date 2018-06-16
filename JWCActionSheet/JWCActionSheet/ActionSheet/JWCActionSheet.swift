@@ -38,7 +38,7 @@ class JWCActionSheet: JWCBaseContainer {
         return table
     }()
     
-    override init(frame: CGRect) {
+   fileprivate override init(frame: CGRect) {
         super.init(frame: frame)
         
     }
@@ -48,7 +48,7 @@ class JWCActionSheet: JWCBaseContainer {
     /// - Parameters:
     ///   - items: <#items description#>
     ///   - headView: <#headView description#>
-    convenience init(items:[JWCActionSheetItem],headView:UIView? = nil) {
+   fileprivate convenience init(items:[JWCActionSheetItem],headView:UIView? = nil) {
         
         self.init(frame: UIScreen.main.bounds)
         self.headView = headView
@@ -62,7 +62,7 @@ class JWCActionSheet: JWCBaseContainer {
      /// - Parameters:
      ///   - titles: <#titles description#>
      ///   - headView: <#headView description#>
-     convenience init(titles:[String],headView:UIView? = nil) {
+    fileprivate convenience init(titles:[String],headView:UIView? = nil) {
         self.init(frame: UIScreen.main.bounds)
         self.headView = headView
         self.items = createDefautItem(titles: titles)
@@ -289,7 +289,7 @@ class JWCActionSheetCell: UITableViewCell {
         return lbl
     }()
     
-    lazy var line: UILabel = {
+   fileprivate lazy var line: UILabel = {
         let lbl = UILabel()
         lbl.backgroundColor = UIColor.lightGray
         return lbl
@@ -318,7 +318,7 @@ class JWCActionSheetCell: UITableViewCell {
         }
     }
     
-    func updateCell() {
+   fileprivate func updateCell() {
         titleLbl.text = self.cellInfo.title
         titleLbl.font = cellInfo.titleFont
         titleLbl.textColor = cellInfo.titleColor
