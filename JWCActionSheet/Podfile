@@ -6,5 +6,5 @@ target 'JWCActionSheet' do
   use_frameworks!
 
   # Pods for JWCActionSheet
-
+  pod 'SnapKit', '~> 4.0.0'
 end
