@@ -72,7 +72,7 @@ class JWCActionSheet: JWCBaseContainer {
      /// 类方法1
      ///
      /// - Parameters:
-     ///   - titles: <#titles description#>
+     ///   - titles: 数据源 String 类型
      ///   - headView: <#headView description#>
      /// - Returns: <#return value description#>
      class func actionSheet(titles:[String],headView:UIView?) -> JWCActionSheet {
@@ -83,8 +83,8 @@ class JWCActionSheet: JWCBaseContainer {
      /// 类方法2
      ///
      /// - Parameters:
-     ///   - items: <#items description#>
-     ///   - headView: <#headView description#>
+     ///   - items: 数据源 JWCActionSheetItem 类型的数组
+     ///   - headView: headerView 如果没有则传 nil
      /// - Returns: <#return value description#>
      class func actionSheet(items:[JWCActionSheetItem],headView:UIView?) -> JWCActionSheet {
         let action = JWCActionSheet.init(items: items, headView: headView)
@@ -105,6 +105,9 @@ class JWCActionSheet: JWCBaseContainer {
     
     
     
+    /// 弹出
+    ///
+    /// - Parameter callback: <#callback description#>
     func show(callback:(ResultCallback?)) {
         resultCallback = callback
         
@@ -334,13 +337,19 @@ class JWCActionSheetCell: UITableViewCell {
 
 // MARK: -  JWCActionSheetItem 配置每一个选项(cell)的  属性 字体 间距 背景颜色等
 class JWCActionSheetItem: NSObject {
-    
+    //标题
      var title:String = ""
+    //标题颜色: 默认为黑
      var titleColor:UIColor = UIColor.black
+    // 标题的字体,默认为14
      var titleFont = UIFont.systemFont(ofSize: 14)
+    // item 的高度 默认为30
      var height:Float = 30
+    //两个 item 的之间的分割线颜色 默认为灰色
      var bottomLineColor:UIColor = UIColor.init(white: 0, alpha: 0.2)
+    //两个 item 的之间的分割线高度 默认为1
      var bottomLineHeight:Float = 1.0
+    // item 的背景颜色
      var backgroundColor:UIColor = UIColor.white
     
      convenience init(title:String,titleColor:UIColor,titleFont:UIFont,height:Float,bottomLineColor:UIColor,bottomLineHeight:Float,backgroundColor:UIColor) {
